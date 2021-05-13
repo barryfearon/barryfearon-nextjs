@@ -8,8 +8,27 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Just examples:
-$primary: #19bc9c;
-$secondary: #ed7164;
+$primary: #acd8da;
+$secondary: #77848c;
+$dark: #3d3d3d;
+$bf1: #1c1b26;
+$bf2: #454a59;
+$bf3: #00d4dd;
+$bf4: #77848c;
+$bf5: #0a0a0a;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    'bf1': $bf1,
+    'bf2': $bf2,
+    'bf3': $bf3,
+    'bf4': $bf4,
+    'bf5': $bf5
+  ),
+  $theme-colors
+);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // These are here so that this file alone can be imported into SCSS modules to make Bootstrap    //

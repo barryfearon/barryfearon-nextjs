@@ -3,3 +3,12 @@
 // and mixins are available to the modules.                                                      //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @import '../../global-styles/custom-bootstrap-variables';
+
+.bfTitle {
+  background-blend-mode: normal;
+  z-index: 1;
+}
+
+.contactIcons {
+  display: initial;
+}

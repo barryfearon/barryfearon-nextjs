@@ -1,2 +1,57 @@
 @import './custom-bootstrap-variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  @include font-size(20px);
+  color: $gray-100;
+  font-display: swap;
+}
+
+b,
+strong {
+  font-weight: 400;
+}
+
+h1 {
+  @include font-size(4rem);
+}
+
+.lead {
+  @include font-size(1.5rem);
+  line-height: 3rem;
+}
+
+h1,
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: rgba($bf3, 0.7);
+  font-display: swap;
+}
+
+h3,
+h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: $primary;
+  font-display: swap;
+
+  a {
+    color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+li {
+  color: $white;
+}

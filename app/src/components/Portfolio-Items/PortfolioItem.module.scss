@@ -1,0 +1,38 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// By importing the custom bootstrap variables into modules, all bootstrap variables, functions  //
+// and mixins are available to the modules.                                                      //
+///////////////////////////////////////////////////////////////////////////////////////////////////
+@import '../../global-styles/custom-bootstrap-variables';
+
+.bfPortfolio {
+  h1,
+  h2 {
+    color: rgba($white, 0.7);
+    letter-spacing: -0.3rem;
+    text-shadow: 0 0 10px rgba($bf3, 0.5), 0 0 20px rgba($bf3, 0.5), 0 0 30px $primary,
+      0 0 40px $primary, 0 0 50px $primary, 0 0 60px $primary, 0 0 70px $primary;
+  }
+}
+
+.imageThumb {
+  transition: all 1s ease-in-out;
+  opacity: 0.6;
+  &:hover {
+    transform: scale(1.03) rotate(-2deg);
+    opacity: 1;
+  }
+}
+
+.itemCardBody {
+  padding: 0;
+  position: relative;
+}
+
+.itemInfo {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  padding: 0.5rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}

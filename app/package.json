@@ -5,8 +5,9 @@
   "repository": "https://github.com/barryfearon/barryfearon-nextjs.git",
   "browser": "out/index.html",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev -p 3005",
     "build": "cross-env NEXT_EXPORT=true next build && cross-env NEXT_EXPORT=true next export",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "tslint ./src/**/*.{ts,tsx} -t verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "bootstrap": "4.6.0",
+    "framer-motion": "4.1.13",
     "lazysizes": "5.3.2",
     "next": "10.2.0",
     "next-offline": "5.0.5",

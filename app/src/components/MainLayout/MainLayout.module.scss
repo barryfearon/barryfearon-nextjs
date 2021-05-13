@@ -4,7 +4,29 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @import '../../global-styles/custom-bootstrap-variables';
 
-.mainContent {
-  background-color: $white;
-  padding-top: 2rem;
+.browserNotSupported {
+  display: none;
+  &.active {
+    display: block;
+    background: #0a0a0a;
+    color: #00d4ddb3;
+    font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 2rem;
+    z-index: 4;
+    overflow: auto;
+
+    @include media-breakpoint-up(lg) {
+      padding: 6rem;
+    }
+
+    h1 {
+      color: $light;
+    }
+  }
 }
